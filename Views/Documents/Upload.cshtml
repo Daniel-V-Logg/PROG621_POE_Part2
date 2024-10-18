@@ -1,0 +1,12 @@
+﻿@* Form for uploading documents *@
+<h2>Upload Documents</h2>
+<form asp-action="UploadDocument" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="ClaimID">Claim ID</label>
+        <input type="text" id="ClaimID" name="ClaimID" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="file" name="DocumentFile" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Upload Document</button>
+</form>
